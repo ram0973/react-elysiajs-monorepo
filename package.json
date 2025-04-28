@@ -1,0 +1,25 @@
+{
+  "name": "react-elysiajs-monorepo",
+  "type": "module",
+  "workspaces": ["frontend", "backend"],
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "private": true,
+  "scripts": {
+    "bi": "bun install --filter backend",
+    "fi": "bun install --filter frontend",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "bun --filter '*' --watch dev",
+    "format": "bunx biome format --write ./backend/src ./frontend/src",
+    "lint": "bunx biome lint --error-on-warnings ./backend/src ./frontend/src"
+  },
+  "dependencies": {
+    "@elysiajs/swagger": "^1.2.2",
+    "wretch": "^2.11.0"
+  }
+}
