@@ -23,6 +23,13 @@
     // Some stricter flags (disabled by default)
     "noUnusedLocals": false,
     "noUnusedParameters": false,
-    "noPropertyAccessFromIndexSignature": false
+    "noPropertyAccessFromIndexSignature": false,
+
+    "paths": {
+    	"@backend": ["./backend/src"],
+    	"@backend/*": ["./backend/src/*"],
+    	"@frontend": ["./frontend/src"],
+    	"@frontend/*": ["./frontend/src/*"]
+    }
   }
 }

@@ -6,3 +6,7 @@ bun create vite (frontend - Vanilla - Typescript)
 https://svag.group/ru/guide/dev-web-iserdmi/lesson/vscode
 
 bun add --dev --exact @biomejs/biome
+
+bun bi typescript tsx @types/node --save-dev
+
+bun bi prisma --save-dev
